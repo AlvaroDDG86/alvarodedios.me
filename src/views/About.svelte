@@ -56,12 +56,12 @@
                 {
                     icon: FaGitAlt,
                     color: '#E84D31',
-                    text: 'Git, Git-flow, GitHub, Sourcedest, Butbucket'
+                    text: 'Git, GitFlow, GitHub, Sourcedest, Bitbucket'
                 },
                 {
                     icon: FaSass,
                     color: '#C76494',
-                    text: 'Sass, Bootstrap, TailwindCSS, Prime'
+                    text: 'Sass, TailwindCSS, Bootstrap, Prime'
                 },
                 {
                     icon: FaJira,
