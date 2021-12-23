@@ -75,7 +75,7 @@
             font-weight: bold;
             position: relative;
             overflow: hidden;
-            padding: 5px 10px;
+            padding: 15px 10px;
             width: 100%;
             
             &::after {
