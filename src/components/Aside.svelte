@@ -1,12 +1,16 @@
 <script lang="ts">
+    interface MenuLink {
+        to: string;
+        link: string;
+    }
     import FaAlignJustify from 'svelte-icons/fa/FaAlignJustify.svelte'
     import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
 	import { Link } from "svelte-routing";
-    const menu = [
+    const menu: Array<MenuLink> = [
         { to: '/', link: 'Home' },
         { to: 'about', link: 'About' },
         { to: 'work', link: 'Work' },
-        { to: 'projects', link: 'Projects' },
+        { to: 'projects', link: 'Lab' },
         { to: 'contact', link: 'Contact' },
     ]
     let open: Boolean = false
@@ -154,7 +158,7 @@
     display: none;
     height: 1em;
     width: 1em;
-    position: absolute;
+    position: fixed;
     top: 3px;
     right: 3px;
     cursor: pointer;

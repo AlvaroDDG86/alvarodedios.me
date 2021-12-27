@@ -1,6 +1,6 @@
 <script>
     import Typewriter from 'svelte-typewriter'
-    import setup from '../assets/images/setup.jpg'
+    import setup from '../../public/assets/images/setup.jpg'
 </script>
 <section class="home-section">
     <div class="hero-texts">
