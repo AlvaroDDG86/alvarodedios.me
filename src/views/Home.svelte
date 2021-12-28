@@ -40,6 +40,9 @@
     z-index: 2;
     padding-left: 1em;
 }
+.hero-title {
+    font-family: 'Pushster', cursive;
+}
 
 .hero-heading {
     color: white;

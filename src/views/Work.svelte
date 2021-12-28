@@ -93,44 +93,50 @@
         present...
     </p>
     <div class="work__content">
-        <div class="work__timeline">
-            {#each experiences as experience, i}
-                <div class="work__experience {experience.active ? 'active' : ''}" on:click={_ => experience.active = !experience.active} style="top: { `${i * 12}em` }">
-                    <span class="work__close">
-                        <FaTimes />
-                    </span>
-                    <div class="work__experience-title">
-                        { experience.title }
-                    </div>
-                    <div class="work__logo" style="background-image: url('{experience.logo}')">
-                    </div>
-                    {#if experience.active}
-                        <div class="work__experience-dates">
-                            { experience.startDate} - { experience.endDate}
-                        </div>
-                        <div class="work__experience-company">
-                            { experience.company}
-                        </div>
-                        <div class="work__experience-content">
-                            {@html experience.desc}
-                        </div>
-                        <div class="work__experience-techs">
-                            <ol>
-                                {#each experience.techs as exp}
-                                <li>
-                                    { exp }
-                                </li>
-                                {/each}
-                            </ol>
-                        </div>
-                    {:else}
-                        <span class="work__experience-dates--small">
-                            { experience.startDate} - { experience.endDate}
-                        </span>
-                    {/if}
+        <span class="work__timeline">
+        </span>
+        {#each experiences as experience, i}
+            <div class="work__experience {experience.active ? 'active' : ''}" on:click={_ => experience.active = !experience.active} style="top: { `${i * 12}em` }">
+                <span class="work__experience-link">
+
+                </span>
+                <span class="work__close">
+                    <FaTimes />
+                </span>
+                <div class="work__experience-title">
+                    { experience.title }
                 </div>
-            {/each}
-        </div>
+                <div class="work__logo" style="background-image: url('{experience.logo}')">
+                </div>
+                {#if experience.active}
+                    <div class="work__experience-dates">
+                        { experience.startDate} - { experience.endDate}
+                    </div>
+                    <div class="work__experience-company">
+                        { experience.company}
+                    </div>
+                    <div class="work__experience-content">
+                        {@html experience.desc}
+                    </div>
+                    <div class="work__experience-techs">
+                        <ol>
+                            {#each experience.techs as exp}
+                            <li>
+                                { exp }
+                            </li>
+                            {/each}
+                        </ol>
+                    </div>
+                {:else}
+                    <span class="work__experience-dates--small">
+                        { experience.startDate} - { experience.endDate}
+                    </span>
+                {/if}
+            </div>
+        {/each}
+    </div>
+    <div class="work__present">
+        2016...
     </div>
 </section>
 <style lang="scss">
@@ -145,6 +151,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
+    font-family: 'Pushster', cursive;
 }
 
 .work__present {
@@ -178,7 +185,7 @@
     align-items: center;
     border-radius: 1em;
     position: absolute;
-    left: calc(50% - 4em);
+    // left: calc(50% - 4em);
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.6s;
@@ -188,14 +195,42 @@
         width: 100vw;
         overflow-y: scroll;
         position: fixed;
-        left: 0;
+        left: 0 !important;
         top: 0 !important;
         border-radius: 0;
         z-index: 10;
         gap: 1em;
         background-color: rgba(0, 0, 0, 0.849);
         color: white;
+        & > .work__experience-link {
+            display: none;
+        }
     }
+    &:hover:nth-child(even) > .work__experience-link {
+        background-color: transparent;
+        left: 0;
+        width: 7em;
+    }
+    &:hover:nth-child(odd) > .work__experience-link {
+        background-color: transparent;
+        left: 0;
+        width: 7em;
+    }
+    
+    &:not(.active):hover:nth-child(even) {
+        transform: scale(1.5) skewY(10deg);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
+    }
+    &:not(.active):hover:nth-child(odd) {
+        transform: scale(1.5) skewY(-10deg);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
+    }
+}
+.work__experience:nth-child(even) {
+    left: calc(50% - 16em);
+}
+.work__experience:nth-child(odd) {
+    left: calc(50% + 8em);
 }
 
 .active > .work__close {
@@ -233,6 +268,21 @@
     min-width: 7em;
     min-height: 7em;
 }
+.work__experience-link {
+    height: 2px;
+    width: 8em;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.473);
+    transition: 0.4s;
+    z-index: 9;
+}
+.work__experience:nth-child(even) > .work__experience-link {
+    left: 100%;
+}
+.work__experience:nth-child(odd) > .work__experience-link {
+    left: -105%;
+}
 .work__experience-title {
     font-size: 1em;
     font-weight: bold;
@@ -246,6 +296,8 @@
 
 .active > .work__experience-title {
     font-size: 3em;
+    color: gold;
+    text-shadow: 2px 2px 0px transparent, 3px 3px 0px rgb(197, 197, 197);
 }
 
 .work__experience-dates {
@@ -271,17 +323,29 @@
         margin: 0;
     }
 }
-.work__experience:not(.active):hover {
-    transform: scale(1.5) skewY(10deg);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
-}
 @media only screen and (max-width: 992px) { 
     .work {
         max-width: 100%;
         margin: initial;
     }
-    .work__experience:not(.active):hover {
+    .work__experience:nth-child(even):not(.active):hover {
         transform: scale(1) skewY(0);
+    }
+    .work__experience:nth-child(odd):not(.active):hover {
+        transform: scale(1) skewY(0);
+    }
+
+    .work__experience:nth-child(even) {
+        left: calc(50% - 11em);
+    }
+    .work__experience:nth-child(odd) {
+        left: calc(50% + 3em);
+        & > .work__experience-link {
+            left: -3em;
+        }
+    }
+    .work__experience-link {
+        width: 3em;
     }
 }
 </style>

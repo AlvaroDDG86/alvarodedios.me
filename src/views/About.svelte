@@ -111,6 +111,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
+    font-family: 'Pushster', cursive;
 }
 
 .about__p {
