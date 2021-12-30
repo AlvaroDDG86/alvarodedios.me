@@ -60,6 +60,9 @@
     ]
     $: filteredProjects = projects.filter(proj => !active || active.text === proj.cat);
     let active = null
+    function setType(button) {
+        active = !active ? button : active.text === button.text ? null : button
+    }
 </script>
 
 <section class="lab">
@@ -67,7 +70,7 @@
     <nav class="lab__select">
         <ul class="lab__frameworks">
             {#each buttons as button}
-                <li class="{ active === button ? 'lab__framwork active' : 'lab__framwork' }" on:click="{() => active = active ? null : button}">
+                <li class="{ active === button ? 'lab__framwork active' : 'lab__framwork' }" on:click="{() => setType(button)}">
                     <div class="lab__framwork-icon">
                         <svelte:component this={button.icon} />
                     </div>
