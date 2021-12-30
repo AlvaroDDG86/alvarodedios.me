@@ -15,7 +15,7 @@
     ]
     let open: Boolean = false
 </script>
-<span class="{open ? 'aside__mobile aside__mobile--open' : 'aside__mobile'}"on:click="{() => open = true}">
+<span class="{open ? 'aside__mobile aside__mobile--open' : 'aside__mobile'}" on:click="{() => open = true}">
     <FaAlignJustify />
 </span>
 <aside class="{open ? 'aside aside--open' : 'aside'}">

@@ -169,13 +169,14 @@
 .work__timeline {
     width: 2px;
     height: calc(100% - 2em);
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
 }
 
 .work__experience {
     height: 4em;
     width: 8em;
-    border: solid 2px rgba(0, 0, 0, 0.37);
+    // border: solid 2px rgba(0, 0, 0, 0.37);
     background-color: white;
     color: black;
     display: flex;
@@ -183,12 +184,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 1em;
+    border-radius: 0.5em;
     position: absolute;
-    // left: calc(50% - 4em);
     box-sizing: border-box;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
     cursor: pointer;
-    transition: 0.6s;
     &.active {
         padding-top: 5em;
         min-height: 100vh;
@@ -205,25 +205,6 @@
         & > .work__experience-link {
             display: none;
         }
-    }
-    &:hover:nth-child(even) > .work__experience-link {
-        background-color: transparent;
-        left: 0;
-        width: 7em;
-    }
-    &:hover:nth-child(odd) > .work__experience-link {
-        background-color: transparent;
-        left: 0;
-        width: 7em;
-    }
-    
-    &:not(.active):hover:nth-child(even) {
-        transform: scale(1.5) skewY(10deg);
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
-    }
-    &:not(.active):hover:nth-child(odd) {
-        transform: scale(1.5) skewY(-10deg);
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
     }
 }
 .work__experience:nth-child(even) {
@@ -255,10 +236,9 @@
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    border: solid 2px rgba(0, 0, 0, 0.37);
     background-size: cover;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
     background-position: center;
-    transition: 0.6s;
 }
 
 .active .work__logo {
@@ -273,15 +253,15 @@
     width: 8em;
     position: absolute;
     top: 50%;
-    background-color: rgba(255, 255, 255, 0.473);
-    transition: 0.4s;
+    background-color: white;
     z-index: 9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
 }
 .work__experience:nth-child(even) > .work__experience-link {
     left: 100%;
 }
 .work__experience:nth-child(odd) > .work__experience-link {
-    left: -105%;
+    left: -100%;
 }
 .work__experience-title {
     font-size: 1em;
@@ -328,13 +308,6 @@
         max-width: 100%;
         margin: initial;
     }
-    .work__experience:nth-child(even):not(.active):hover {
-        transform: scale(1) skewY(0);
-    }
-    .work__experience:nth-child(odd):not(.active):hover {
-        transform: scale(1) skewY(0);
-    }
-
     .work__experience:nth-child(even) {
         left: calc(50% - 11em);
     }
