@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Typewriter from 'svelte-typewriter'
     import setup from '../../public/assets/images/setup.jpg'
 </script>

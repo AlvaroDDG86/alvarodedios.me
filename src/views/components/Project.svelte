@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
     import words from '../../../public/assets/images/projects/your-words.png'
     import rate from '../../../public/assets/images/projects/light-rate.png'
+    import { IProject } from 'src/models/IProject';
     let images = {
         words,
         rate
     } 
-    export let project
+    export let project: IProject
     function openLink(url) {
         window.open(url, '_blank');
     }

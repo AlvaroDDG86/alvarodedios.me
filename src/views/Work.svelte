@@ -1,6 +1,7 @@
 <script lang="ts">
     import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
-    const experiences = [
+    import { IExperience } from 'src/models/IExperience';
+    const experiences: IExperience[] = [
         {
             title: 'FrontEnd Engineer',
             startDate: 'May 2021',

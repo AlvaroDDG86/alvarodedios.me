@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import FaVuejs from 'svelte-icons/fa/FaVuejs.svelte'
     import FaAngular from 'svelte-icons/fa/FaAngular.svelte'
     import FaReact from 'svelte-icons/fa/FaReact.svelte'
@@ -6,7 +6,9 @@
     import FaExternalLinkAlt from 'svelte-icons/fa/FaExternalLinkAlt.svelte'
     import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
     import Project from './components/Project.svelte'
-    const buttons = [
+    import { IButton } from 'src/models/IButton';
+    import { IProject } from 'src/models/IProject';
+    const buttons: IButton[] = [
         {
             text: 'Vue',
             icon: FaVuejs
@@ -24,7 +26,7 @@
             icon: FaFlask
         }
     ]
-    const projects = [
+    const projects: IProject[] = [
         {
             title: 'Your words!',
             desc: 'Place where you can save your words, anotations, examples, etc... ',
@@ -60,7 +62,7 @@
     ]
     $: filteredProjects = projects.filter(proj => !active || active.text === proj.cat);
     let active = null
-    function setType(button) {
+    function setType(button: IButton): void {
         active = !active ? button : active.text === button.text ? null : button
     }
 </script>
