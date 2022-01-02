@@ -23,8 +23,11 @@
 <style lang="scss">
 .container {
 	position: relative;
-	width: 100vw;
+	max-width: 100vw;
 	min-height: 100vh;
 	overflow: hidden;
 }
+// * {
+//     outline: 1px solid #f00 !important;
+// }
 </style>

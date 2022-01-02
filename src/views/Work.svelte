@@ -146,6 +146,7 @@
     max-width: 50%;
     background-color: #333;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .work__header {

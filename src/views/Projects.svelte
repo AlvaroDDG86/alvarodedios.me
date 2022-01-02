@@ -83,11 +83,18 @@
             {/each}
         </ul>
     </nav>
-    <div class="lab__projects">
-        {#each filteredProjects as project}
-            <Project project={project} />
-        {/each}
-    </div>
+    {#if filteredProjects.length}
+        <div class="lab__projects">
+            {#each filteredProjects as project}
+                <Project project={project} />
+            {/each}
+        </div>
+    {:else}
+        <div class="lab__notfound">
+            Working on it...
+        </div>
+    {/if}
+    
 </section>
 <style lang="scss">
 .lab {
@@ -96,6 +103,7 @@
     background-color: #333;
     min-height: 100vh;
     padding-bottom: 1em;
+    box-sizing: border-box;
     &__header {
         margin: 0;
         font-size: 3em;
@@ -157,7 +165,7 @@
     &__framwork-icon {
         height: 22px;
     }
-    .lab__projects {
+    &__projects {
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
         grid-gap: 3em;
@@ -165,6 +173,13 @@
         padding: 0;
         margin: 2em;
         box-sizing: border-box;
+    }
+    &__notfound {
+        min-height: 5em;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 992px) { 

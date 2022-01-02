@@ -74,10 +74,12 @@
 </script>
 <section class="about">
     <h1 class="about__header">About me</h1>
-    <p class="about__p">Hey everyone, My name is Álvaro, and I'm from Spain. In the last five years, I've been working as a software developer. In my opinion, technology is here to help us, and I am trying to make software that is easy to use, reusable, fast, and easy to understand.</p>
-    <p class="about__p">As a programmer, I have had the opportunity to work with the latest technologies such as .net, angular 6+, vue 2 and 3 and more.</p>
-    <p class="about__p">From the very beginning, I've always tried to improve my skills through courses, practices, and enjoying the journey.</p>
-    <p class="about__p">I am always willing to communicate, assist, ask, learning and be part of a team.</p>
+    <div class="about__desc">
+        <p class="about__p">Hey everyone, My name is Álvaro, and I'm from Spain. In the last five years, I've been working as a software developer. In my opinion, technology is here to help us, and I am trying to make software that is easy to use, reusable, fast, and easy to understand.</p>
+        <p class="about__p">As a programmer, I have had the opportunity to work with the latest technologies such as .net, angular 6+, vue 2 and 3 and more.</p>
+        <p class="about__p">From the very beginning, I've always tried to improve my skills through courses, practices, and enjoying the journey.</p>
+        <p class="about__p">I am always willing to communicate, assist, ask, learning and be part of a team.</p>
+    </div>
     <h2 class="about__title">Skills</h2>
     <div class="about__skills-content">
     {#each skills as skill}
@@ -104,6 +106,7 @@
     margin: 0 auto;
     max-width: 50%;
     background-color: #333;
+    box-sizing: border-box;
     min-height: 100vh;
 }
 
@@ -112,6 +115,10 @@
     font-size: 3em;
     text-align: center;
     font-family: 'Pushster', cursive;
+}
+.about__desc {
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 .about__p {
@@ -143,7 +150,6 @@
     margin: 0 auto;
     width: 75%;
     box-sizing: border-box;
-    padding-bottom: 2em;
 }
 
 .about__skills-list {
