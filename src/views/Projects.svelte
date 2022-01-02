@@ -159,7 +159,7 @@
     }
     .lab__projects {
         display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(274px, 1fr));
+        grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
         grid-gap: 3em;
         align-content: start;
         padding: 0;

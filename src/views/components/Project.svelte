@@ -1,17 +1,14 @@
 <script lang="ts">
-    import words from '../../../public/assets/images/projects/your-words.png'
-    import rate from '../../../public/assets/images/projects/light-rate.png'
+    import { getImage } from 'src/services/images-service';
     import { IProject } from 'src/models/IProject';
-    let images = {
-        words,
-        rate
-    } 
     export let project: IProject
     function openLink(url) {
         window.open(url, '_blank');
     }
+    $: src = getImage(project.image)
+    
 </script>
-<div class="project" style="background-image: url('{images[project.image]}')">
+<div class="project" style="background-image: url('{src}')">
     <h3 class="project__title">{project.title}</h3>
     <div class="project__content">
         <p class="project__desc">{project.desc}</p>
@@ -40,8 +37,9 @@
     align-items: center;
     cursor: pointer;
     transition: 0.6s;
+    filter: grayscale(90%);
     &:hover {
-        filter: grayscale(90%);
+        filter: grayscale(0);
     }
     &:hover > &__content {
         opacity: 1;
