@@ -162,6 +162,7 @@
         width: 100%;
         padding: 0 1em;
         box-sizing: border-box;
+        min-height: 100%;
         max-height: 100vh;
         overflow-y: scroll;
     }

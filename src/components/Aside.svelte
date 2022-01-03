@@ -5,7 +5,7 @@
     }
     import FaAlignJustify from 'svelte-icons/fa/FaAlignJustify.svelte'
     import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
-	import { Link } from "svelte-routing";
+    import { link, navigate } from 'svelte-routing';
     const menu: Array<MenuLink> = [
         { to: '/', link: 'Home' },
         { to: 'about', link: 'About' },
@@ -14,6 +14,10 @@
         { to: 'contact', link: 'Contact' },
     ]
     let open: Boolean = false
+    function navigateNewPage(link) {
+        open = false
+        navigate(link)
+    }
 </script>
 <span class="{open ? 'aside__mobile aside__mobile--open' : 'aside__mobile'}" on:click="{() => open = true}">
     <FaAlignJustify />
@@ -25,11 +29,11 @@
     <span class="aside__close" on:click="{() => open = false}">
         <FaTimes />
     </span>
-    <ul class="aside__menu">
+    <div class="aside__menu">
         {#each menu as item}
-            <li on:click="{() => open = false}" class="aside__link"><Link to={item.to}>{item.link}</Link></li>
+            <div on:click="{() => navigateNewPage(item.to)}" class="aside__link"><span class="aside__link-text">{item.link}</span></div>
         {/each}
-    </ul>
+    </div>
 </aside>
 <style lang="scss">
 .aside {
@@ -81,6 +85,13 @@
             overflow: hidden;
             padding: 15px 10px;
             width: 100%;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: #333;
+            }
             
             &::after {
                 content: '';
@@ -91,24 +102,16 @@
                 background-color: white;
                 left: 100%;
                 transition: 0.6s;
-                z-index: 1;
+                z-index: 0;
             }
     
             &:hover::after {
                 left: 0;
             }
 
-            &:hover > :global(a) {
-                color: #333;
-            }
-
-            & > :global(a) {
-                position: relative;
-                text-decoration: none;
-                text-transform: uppercase;
-                z-index: 2;
-                color: white;
-                width: 100%;
+            &-text {
+               z-index: 1;
+               position: relative;
             }
         }
     }
