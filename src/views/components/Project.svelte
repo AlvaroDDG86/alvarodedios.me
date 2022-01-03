@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { scale } from 'svelte/transition';
     import { getImage } from 'src/services/images-service';
     import { IProject } from 'src/models/IProject';
     export let project: IProject
@@ -8,7 +9,7 @@
     $: src = getImage(project.image)
     
 </script>
-<div class="project" style="background-image: url('{src}')">
+<div class="project" transition:scale style="background-image: url('{src}')">
     <h3 class="project__title">{project.title}</h3>
     <div class="project__content">
         <p class="project__desc">{project.desc}</p>

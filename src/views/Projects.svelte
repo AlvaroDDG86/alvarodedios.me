@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { scale } from 'svelte/transition';
     import FaVuejs from 'svelte-icons/fa/FaVuejs.svelte'
     import FaAngular from 'svelte-icons/fa/FaAngular.svelte'
     import FaReact from 'svelte-icons/fa/FaReact.svelte'
@@ -90,7 +91,7 @@
             {/each}
         </div>
     {:else}
-        <div class="lab__notfound">
+        <div class="lab__notfound" transition:scale>
             Working on it...
         </div>
     {/if}
@@ -176,7 +177,7 @@
     }
     &__notfound {
         min-height: 5em;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
