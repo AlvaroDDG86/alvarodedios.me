@@ -100,7 +100,7 @@
                 },
                 {
                     icon: FaExternalLinkAlt,
-                    url: 'https://football-angular.netlify.app/standing/2014'
+                    url: 'https://football-angular.netlify.app/'
                 }
             ]
         },
