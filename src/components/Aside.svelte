@@ -1,4 +1,5 @@
 <script lang="ts">
+    import SocialList from 'src/components/SocialList.svelte'
     interface MenuLink {
         to: string;
         link: string;
@@ -33,6 +34,7 @@
         {#each menu as item}
             <div on:click="{() => navigateNewPage(item.to)}" class="aside__link"><span class="aside__link-text">{item.link}</span></div>
         {/each}
+        <SocialList />
     </div>
 </aside>
 <style lang="scss">
@@ -49,7 +51,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-left: 2px solid white;
+    border-left: 2px solid chartreuse;
     z-index: 10;
 
    
@@ -85,9 +87,11 @@
             overflow: hidden;
             padding: 15px 10px;
             width: 100%;
-            font-size: 1em;
+            font-size: 2em;
             color: white;
             text-decoration: none;
+            cursor: pointer;
+            transition: 0.6s;
 
             &:hover {
                 color: #333;
@@ -95,17 +99,18 @@
             
             &::after {
                 content: '';
-                width: 100%;
+                width: 0;
                 height: 100%;
                 position: absolute;
                 top: 0;
                 background-color: white;
-                left: 100%;
+                left: 50%;
                 transition: 0.6s;
                 z-index: 0;
             }
     
             &:hover::after {
+                width: 100%;
                 left: 0;
             }
 
@@ -118,7 +123,7 @@
     & > .aside__burguer {
         cursor: pointer;
         padding: 0 3px;
-        color: white;
+        color: chartreuse;
         opacity: 1;
         transition: 0.6s;
     }
@@ -128,10 +133,7 @@
         box-shadow: -9px 11px 7px rgb(0 0 0 / 16%);
         border-left: transparent;
         & > .aside__burguer {
-            transform: scale(4);
-            position: absolute;
-            top: 50%;
-            opacity: 0;
+            display: none;
         }
         & .aside__menu {
             display: flex;

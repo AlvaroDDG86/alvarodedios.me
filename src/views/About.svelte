@@ -105,7 +105,7 @@
 .about {
     margin: 0 auto;
     max-width: 50%;
-    background-color: #333;
+    background-color: rgba(41, 41, 41, 0.788);
     box-sizing: border-box;
     min-height: 100vh;
 }

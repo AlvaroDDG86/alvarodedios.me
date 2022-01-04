@@ -29,6 +29,7 @@
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     border-radius: 3em;
     background: linear-gradient(315deg, #2e2e2e, #373737);
     position: relative;
@@ -45,13 +46,27 @@
     &:hover > &__content {
         opacity: 1;
     }
+    &:hover > &__title {
+        transform: rotate(0deg);
+        font-size: 2.5em;
+        box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.534);
+    }
     &__title {
-        font-size: 3em;
+        position: absolute;
+        font-size: 2em;
         font-family: 'Pushster', cursive;
         margin: 0;
-        background-color: rgba(51, 51, 51, 0.9);
-        width: 100%;
+        padding: 0.4em;
+        width: fit-content;
         text-align: center;
+        background-color: white;
+        overflow: hidden;
+        color: chartreuse;
+        top: -.4em;
+        left: -.3em;
+        transform: rotate(-7deg);
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.534);
+        transition: 0.6s;
     }
     &__content {
         background-color: rgba(51, 51, 51, 0.9);
@@ -59,6 +74,11 @@
         opacity: 0;
         transition: opacity 0.6s;
         width: 100%;
+        border-bottom-left-radius: 3em;
+        border-bottom-right-radius: 3em;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0px -6px 7px rgba(0, 0, 0, 0.452);
     }
     &__desc {
         padding: 1em 2em

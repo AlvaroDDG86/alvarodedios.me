@@ -12,14 +12,14 @@
         </div>
         <p class="hero-typed">
             <Typewriter interval={50} cursor={'_'} loop={true}>
-                <h2>JS, HTML and CSS are my friends</h2>
+                <h2>JS, HTML and CSS developer</h2>
                 <h2>I code with the last frameworks like Vue, Angular, Svelte and React</h2>
                 <h2>Software engineer expecialized in FrontEnd stuff</h2>
             </Typewriter>
         </p>
     </div>
-    <div class="hero-img" style="background-image: url('{setup}')">
-    </div>
+    <!-- <div class="hero-img" style="background-image: url('{setup}')">
+    </div> -->
 </section>
 <style lang="scss">
 .home-section {
@@ -41,7 +41,7 @@
     padding-left: 1em;
 }
 .hero-title {
-    font-family: 'Pushster', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-heading {
@@ -50,18 +50,18 @@
     text-transform: capitalize;
     font-weight: 8em;
     background-color: transparent;
-    text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgba(255, 255, 255, 0.404);
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
     margin-bottom: .5em;
 }
 
 .hero-heading--small {
     font-size: 2em;
-    text-shadow: 1px 1px 0px transparent, 2px 2px 0px rgba(255, 217, 0, 0.534);
+    text-shadow: 1px 1px 0px transparent, 2px 2px 0px chartreuse;
 }
 .hero-typed {
-    color: rgba(255, 217, 0, 0.76);
+    color: chartreuse;
     font-size: 1.5em;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-img {
@@ -74,7 +74,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.6;
     z-index: 1;
 }
 @media only screen and (max-width: 992px) { 

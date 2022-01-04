@@ -59,6 +59,142 @@
                     url: 'https://precioluzespana.netlify.app/#/'
                 }
             ]
+        },
+        {
+            title: 'Player',
+            desc: 'Player music with this web app',
+            cat: 'Vue',
+            image: 'player',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/Player'
+                },
+                {
+                    icon: FaExternalLinkAlt,
+                    url: 'https://alvaroddg86.github.io/Player/'
+                }
+            ]
+        },
+        {
+            title: 'Calc',
+            desc: 'Simple react app calc',
+            cat: 'React',
+            image: 'calc',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/react-calc'
+                }
+            ]
+        },
+        {
+            title: 'Football',
+            desc: 'Matchs, standings and results',
+            cat: 'Angular',
+            image: 'football',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/football-angular'
+                },
+                {
+                    icon: FaExternalLinkAlt,
+                    url: 'https://football-angular.netlify.app/standing/2014'
+                }
+            ]
+        },
+        {
+            title: 'Heroes',
+            desc: 'Angular material, json-server CRUD-L app',
+            cat: 'Angular',
+            image: 'hero',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/crudl-angular'
+                }
+            ]
+        },
+        {
+            title: 'Voices',
+            desc: 'List of favs, selected and filtered items',
+            cat: 'Vue',
+            image: 'voices',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/challengue-voices'
+                },
+                {
+                    icon: FaExternalLinkAlt,
+                    url: 'https://quirky-turing-2080f9.netlify.app/'
+                }
+            ]
+        },
+        {
+            title: 'Voices 2.0',
+            desc: 'This time with Vue 3, Vite and pinia',
+            cat: 'Vue',
+            image: 'voices',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/challengue-voice-v2'
+                }
+            ]
+        },
+        {
+            title: 'alvarodedios.me',
+            desc: 'Profile page created with svelte',
+            cat: 'Others...',
+            image: 'alvaro',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/alvarodedios.me'
+                },
+                {
+                    icon: FaExternalLinkAlt,
+                    url: 'https:alvarodedios.me'
+                }
+            ]
+        },
+        {
+            title: 'Pinia',
+            desc: 'Litle concept try of pinia',
+            cat: 'Vue',
+            image: 'pinia',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/pinia-try'
+                }
+            ]
+        },
+        {
+            title: 'TDD',
+            desc: 'Litle concept try of tdd',
+            cat: 'Vue',
+            image: 'color',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/color-tdd'
+                }
+            ]
+        },
+        {
+            title: 'Algs',
+            desc: 'Some hackerrank tested algorithms',
+            cat: 'Others...',
+            image: 'alg',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/algorithms'
+                }
+            ]
         }
     ]
     $: filteredProjects = projects.filter(proj => !active || active.text === proj.cat);
@@ -101,7 +237,7 @@
 .lab {
     margin: 0 auto;
     max-width: 50%;
-    background-color: #333;
+    background-color: rgba(41, 41, 41, 0.788);
     min-height: 100vh;
     padding-bottom: 1em;
     box-sizing: border-box;

@@ -91,7 +91,7 @@
 <section class="work">
     <h1 class="work__header">Work Exp.</h1>
     <p class="work__present">
-        present...
+        PRESENT...
     </p>
     <div class="work__content">
         <span class="work__timeline">
@@ -144,7 +144,7 @@
 .work {
     margin: 0 auto;
     max-width: 50%;
-    background-color: #333;
+    background-color: rgba(41, 41, 41, 0.788);
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -160,7 +160,7 @@
     text-align: center;
 }
 .work__content {
-    margin-top: 2em;
+    margin: 3em 0em;
     position: relative;
     display: flex;
     justify-content: center;
@@ -294,7 +294,7 @@
 
 .work__experience-content {
     text-align: justify;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 .work__experience-techs {

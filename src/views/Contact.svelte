@@ -1,12 +1,6 @@
 <script lang="ts">
+    import SocialList from 'src/components/SocialList.svelte'
     import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte'
-    import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
-    import FaTwitter from 'svelte-icons/fa/FaTwitter.svelte'
-    import FaLinkedinIn from 'svelte-icons/fa/FaLinkedinIn.svelte'
-    import FaHackerrank from 'svelte-icons/fa/FaHackerrank.svelte'
-    function openLink(url) {
-        window.open(url, '_blank');
-    }
 </script>
 
 <section class="contact">
@@ -14,31 +8,18 @@
         Contact
     </h1>
     <div class="contact__content">
-        <div class="contact__rrss">
-            <div class="contact__rrss-item" style="color: violet" on:click={_ => openLink('https://github.com/AlvaroDDG86')}>
-                <FaGithub />
-            </div>
-            <div class="contact__rrss-item" style="color: rgb(29, 155, 240)" on:click={_ => openLink('https://twitter.com/AlvaroDDG86')}>
-                <FaTwitter />
-            </div>
-            <div class="contact__rrss-item" style="color: #0A66C2" on:click={_ => openLink('http://linkedin.com/in/álvaro-de-dios-garcía')}>
-                <FaLinkedinIn />
-            </div>
-            <div class="contact__rrss-item" style="color: #2EC866" on:click={_ => openLink('https://www.hackerrank.com/AlvaroDDG')}>
-                <FaHackerrank />
-            </div>
-        </div>
+        <SocialList />
         <form
             class="contact__form"
             action="https://formspree.io/f/xlezdprl"
             method="POST"
         >
         <div class="contact__form-control">
-                <label for="email">Your email:</label>
+                <label for="email">Email:</label>
                 <input type="email" name="_replyto" id="email" placeholder="Email" required>
             </div>
             <div class="contact__form-control">
-                <label for="message">Your message:</label>
+                <label for="message">Message:</label>
                 <textarea name="message" id="message" rows="4" placeholder="Type here..." required/>
             </div>
             <button class="contact__form-button" type="submit"><div><FaEnvelope /></div>Send</button>
@@ -52,7 +33,7 @@
 .contact {
     margin: 0 auto;
     max-width: 50%;
-    background-color: #333;
+    background-color: rgba(41, 41, 41, 0.788);
     min-height: 100vh;
     padding-bottom: 1em;
     box-sizing: border-box;
@@ -70,32 +51,17 @@
         align-items: center;
     }
 
-    &__rrss {
-        padding: 1em 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    &__rrss-item {
-        height: 30px;
-        width: 30px;
-        cursor: pointer;
-        transition: 0.6s;
-        &:hover {
-            transform: scale(1.5) rotate(25deg);
-        }
-    }
-
     &__form {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 1em;
-        width: 100%;
+        width: 80%;
         box-sizing: border-box;
+        background: #333;
+        border-radius: 1em;
+        margin: 1em;
         & label {
             color: chartreuse;
             font-size: 0.6em;
