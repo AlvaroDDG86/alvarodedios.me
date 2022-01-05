@@ -9,6 +9,7 @@ import alvaro from '../../public/assets/images/projects/alvaro.png'
 import color from '../../public/assets/images/projects/color.png'
 import hero from '../../public/assets/images/projects/hero.png'
 import calc from '../../public/assets/images/projects/calc.png'
+import fifty from '../../public/assets/images/projects/fifty.png'
 import notFound from '../../public/assets/images/projects/not-found.png'
 export function getImage(imageName) {
     const images = {
@@ -23,6 +24,7 @@ export function getImage(imageName) {
         color,
         hero,
         calc,
+        fifty,
         notFound
     }
     return images[imageName] ? images[imageName] : images.notFound
