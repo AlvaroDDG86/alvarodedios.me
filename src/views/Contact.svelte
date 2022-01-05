@@ -1,20 +1,45 @@
 <script lang="ts">
+    import me from '../../public/assets/images/me.png'
+    import { scale } from 'svelte/transition';
     import SocialList from 'src/components/SocialList.svelte'
     import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte'
+    import FaMapMarkerAlt from 'svelte-icons/fa/FaMapMarkerAlt.svelte'
+    import FaMailBulk from 'svelte-icons/fa/FaMailBulk.svelte'
+    function downloadCV() {
+        window.open('https://drive.google.com/file/d/1Cyg5SyVXk-W_aS48Lf0ZfgTtYMfqXBMz/view?usp=sharing', '_blank');
+    }
 </script>
 
 <section class="contact">
-    <h1 class="contact__header">
+    <h1 class="contact__header animate animate__down">
         Contact
     </h1>
     <div class="contact__content">
         <SocialList />
+        <img transition:scale class="contact__picture" src={me} alt="my picture" />
+        <div class="contact__list">
+            <div class="contact__item" transition:scale>
+                <div class="contact__icon">
+                    <FaMapMarkerAlt />
+                </div>
+                <span>Spain</span>
+            </div>
+            <div class="contact__item" transition:scale>
+                <div class="contact__icon">
+                    <FaMailBulk />
+                </div>
+                <span>alvarodediosgarcia1986@gmail.com</span>
+            </div>
+        </div>
+        <div class="contact__twitter">
+            <button class="contact__form-button" on:click={_ => downloadCV()}><div><FaEnvelope /></div>Resume</button>
+        </div>
         <form
             class="contact__form"
             action="https://formspree.io/f/xlezdprl"
             method="POST"
-        >
-        <div class="contact__form-control">
+            >
+            <div class="contact__form-control">
                 <label for="email">Email:</label>
                 <input type="email" name="_replyto" id="email" placeholder="Email" required>
             </div>
@@ -24,9 +49,9 @@
             </div>
             <button class="contact__form-button" type="submit"><div><FaEnvelope /></div>Send</button>
         </form>
-        <div class="contact__twitter">
-            <a class="twitter-timeline" data-lang="en" data-theme="dark" href="https://twitter.com/AlvaroDDG86?ref_src=twsrc%5Etfw">Tweets by AlvaroDDG86</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        <a href="https://app.daily.dev/AlvaroDDG86" target="_blank">
+            <img src="https://api.daily.dev/devcards/35906fed01054a54a0400c279d362593.png?r=p4l" width="200" alt="Alvaro de Dios's Dev Card"/>
+        </a>
     </div>
 </section>
 <style lang="scss">
@@ -41,7 +66,16 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        font-family: 'Pushster', cursive;
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+    }
+
+    &__picture {
+        max-width: 30%;
+        filter: grayscale(10);
+        transition: 0.6s;
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 
     &__content {
@@ -49,6 +83,22 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+    &__list {
+        width: 100%;
+        margin: 1em 0;
+    }
+    &__item {
+        padding: 1em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__icon {
+        width: 2em;
+        height: 2em;
+        margin: 0 2em;
+        color: chartreuse;
     }
 
     &__form {
@@ -126,16 +176,17 @@
 
     &__twitter {
         width: 100%;
-        padding: 0 1em;
-        box-sizing: border-box;
-        min-height: 100%;
-        max-height: 100vh;
-        overflow-y: scroll;
+        display: flex;
+        justify-content: center;
     }
 }
 @media only screen and (max-width: 992px) { 
     .contact {
         max-width: 100%;
+        &__picture {
+            max-width: 60%;
+        }
     }
+
 }
 </style>
