@@ -31,8 +31,11 @@
         <FaTimes />
     </span>
     <div class="aside__menu">
+        <div class="aside__mobilename animate animate__down" on:click="{() => navigateNewPage('/')}">
+            alvarodedios.me
+        </div>
         {#each menu as item}
-            <div on:click="{() => navigateNewPage(item.to)}" class="aside__link"><span class="aside__link-text">{item.link}</span></div>
+            <div on:click="{() => navigateNewPage(item.to)}" class="aside__link animate animate__rotateY"><span class="aside__link-text">{item.link}</span></div>
         {/each}
         <SocialList />
     </div>
@@ -54,8 +57,6 @@
     border-left: 2px solid chartreuse;
     z-index: 10;
 
-   
-
     .aside__close {
         display: none;
         width: 1em;
@@ -65,6 +66,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
+        z-index: 3;
     }
     
     .aside__menu {
@@ -80,6 +82,7 @@
         padding: 0;
         margin: 0;
         text-align: center;
+        position: relative;
 
         .aside__link {
             font-weight: bold;
@@ -120,6 +123,17 @@
             }
         }
     }
+
+    &__mobilename {
+        display: none;
+        position: absolute;
+        top: 0em;
+        left: 0.5em;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+        text-shadow: 1px 1px 0px transparent, 2px 2px 0px chartreuse;
+    }
     & > .aside__burguer {
         cursor: pointer;
         padding: 0 3px;
@@ -156,6 +170,10 @@
                 right: 10px !important;
                 left: initial;
             }
+        }
+        
+        &__mobilename {
+            display: initial;
         }
     }
 }

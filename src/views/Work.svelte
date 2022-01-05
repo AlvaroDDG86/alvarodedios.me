@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { scale } from 'svelte/transition';
     import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
     import { IExperience } from 'src/models/IExperience';
     const experiences: IExperience[] = [
@@ -89,7 +90,7 @@
     ]
 </script>
 <section class="work">
-    <h1 class="work__header">Work Exp.</h1>
+    <h1 class="work__header animate animate__down">Work Exp.</h1>
     <p class="work__present">
         PRESENT...
     </p>
@@ -97,7 +98,7 @@
         <span class="work__timeline">
         </span>
         {#each experiences as experience, i}
-            <div class="work__experience {experience.active ? 'active' : ''}" on:click={_ => experience.active = !experience.active} style="top: { `${i * 12}em` }">
+            <div class="work__experience {experience.active ? 'active' : ''}"  transition:scale on:click={_ => experience.active = !experience.active} style="top: { `${i * 12}em` }">
                 <span class="work__experience-link">
 
                 </span>
@@ -153,7 +154,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
-    font-family: 'Pushster', cursive;
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
 }
 
 .work__present {
@@ -274,12 +275,12 @@
 .work__experience-company {
     font-size: 1.3em;
     font-weight: bold;
+    color:chartreuse;
 }
 
 .active > .work__experience-title {
     font-size: 3em;
-    color: gold;
-    text-shadow: 2px 2px 0px transparent, 3px 3px 0px rgb(197, 197, 197);
+    text-shadow: 2px 2px 0px transparent, 3px 3px 0px chartreuse;
 }
 
 .work__experience-dates {

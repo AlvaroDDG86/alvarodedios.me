@@ -1,4 +1,5 @@
 <script>
+    import { scale } from 'svelte/transition';
     import FaJsSquare from 'svelte-icons/fa/FaJsSquare.svelte'
     import FaCss3Alt from 'svelte-icons/fa/FaCss3Alt.svelte'
     import FaHtml5 from 'svelte-icons/fa/FaHtml5.svelte'
@@ -73,14 +74,14 @@
     ]
 </script>
 <section class="about">
-    <h1 class="about__header">About me</h1>
+    <h1 class="about__header animate animate__down">About me</h1>
     <div class="about__desc">
         <p class="about__p">Hey everyone, My name is Álvaro, and I'm from Spain. In the last five years, I've been working as a software developer. In my opinion, technology is here to help us, and I am trying to make software that is easy to use, reusable, fast, and easy to understand.</p>
         <p class="about__p">As a programmer, I have had the opportunity to work with the latest technologies such as .net, angular 6+, vue 2 and 3 and more.</p>
         <p class="about__p">From the very beginning, I've always tried to improve my skills through courses, practices, and enjoying the journey.</p>
         <p class="about__p">I am always willing to communicate, assist, ask, learning and be part of a team.</p>
     </div>
-    <h2 class="about__title">Skills</h2>
+    <h2 class="about__title" transition:scale >Skills</h2>
     <div class="about__skills-content">
     {#each skills as skill}
         <div class="about__skill-title">
@@ -89,7 +90,7 @@
         </div>
         <ul class="about__skills-list">
         {#each skill.list as item}
-            <li class="about__skills-item">
+            <li class="about__skills-item" transition:scale>
                 <IconContent --text-color={item.color}>
                     <svelte:component this={item.icon} />
                 </IconContent>
@@ -114,7 +115,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
-    font-family: 'Pushster', cursive;
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
 }
 .about__desc {
     max-width: 100vw;

@@ -30,7 +30,6 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    border-radius: 3em;
     background: linear-gradient(315deg, #2e2e2e, #373737);
     position: relative;
     display: flex;
@@ -54,7 +53,6 @@
     &__title {
         position: absolute;
         font-size: 2em;
-        font-family: 'Pushster', cursive;
         margin: 0;
         padding: 0.4em;
         width: fit-content;
@@ -66,7 +64,7 @@
         left: -.3em;
         transform: rotate(-7deg);
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.534);
-        transition: 0.6s;
+        transition: 0.2s;
     }
     &__content {
         background-color: rgba(51, 51, 51, 0.9);
@@ -74,8 +72,6 @@
         opacity: 0;
         transition: opacity 0.6s;
         width: 100%;
-        border-bottom-left-radius: 3em;
-        border-bottom-right-radius: 3em;
         position: absolute;
         bottom: 0;
         box-shadow: 0px -6px 7px rgba(0, 0, 0, 0.452);

@@ -173,7 +173,7 @@
             ]
         },
         {
-            title: 'TDD',
+            title: 'Color tdd',
             desc: 'Litle concept try of tdd',
             cat: 'Vue',
             image: 'color',
@@ -195,6 +195,22 @@
                     url: 'https://github.com/AlvaroDDG86/algorithms'
                 }
             ]
+        },
+        {
+            title: '50 projects',
+            desc: 'App in vanilla flavour',
+            cat: 'Others...',
+            image: 'fifty',
+            links: [
+                {
+                    icon: FaGithub,
+                    url: 'https://github.com/AlvaroDDG86/fifty-projects'
+                },
+                {
+                    icon: FaExternalLinkAlt,
+                    url: 'https://alvaroddg86.github.io/fifty-projects/'
+                }
+            ]
         }
     ]
     $: filteredProjects = projects.filter(proj => !active || active.text === proj.cat);
@@ -205,7 +221,7 @@
 </script>
 
 <section class="lab">
-    <h1 class="lab__header">Lab</h1>
+    <h1 class="lab__header animate animate__down">Lab</h1>
     <nav class="lab__select">
         <ul class="lab__frameworks">
             {#each buttons as button}
@@ -245,7 +261,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        font-family: 'Pushster', cursive;
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
     }
     &__select {
         width: 100%;
@@ -281,7 +297,7 @@
         justify-content: center;
         align-items: center;
         &:hover, &.active {
-            background: white;
+            background: chartreuse;
             color: black;
         }
         &:hover::after {
