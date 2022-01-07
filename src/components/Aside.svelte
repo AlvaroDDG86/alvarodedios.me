@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-left: 2px solid chartreuse;
+    border-left: 2px solid rgb(10, 86, 185);
     z-index: 10;
 
     .aside__close {
@@ -132,12 +132,12 @@
         color: white;
         font-size: 2em;
         cursor: pointer;
-        text-shadow: 1px 1px 0px transparent, 2px 2px 0px chartreuse;
+        text-shadow: 1px 1px 0px transparent, 2px 2px 0px rgb(10, 86, 185);
     }
     & > .aside__burguer {
         cursor: pointer;
         padding: 0 3px;
-        color: chartreuse;
+        color: rgb(10, 86, 185);
         opacity: 1;
         transition: 0.6s;
     }
@@ -185,7 +185,7 @@
     top: 3px;
     right: 3px;
     cursor: pointer;
-    color: white;
+    color: rgb(143, 143, 143);
     width: 2em;
     height: 2em;
     z-index: 10;

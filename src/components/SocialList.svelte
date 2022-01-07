@@ -44,12 +44,12 @@
         cursor: pointer;
         &:hover {
             transform: scale(1.5) rotate(25deg);
-            color: chartreuse;
+            color: rgb(10, 86, 185);
         }
     }
     &__line {
         height: 1px;
-        background-color: chartreuse;
+        background-color: rgb(10, 86, 185);
         width: 4em;
     }
 }

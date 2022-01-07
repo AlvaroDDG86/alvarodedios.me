@@ -67,22 +67,23 @@
 }
 
 .hero-heading {
-    color: white;
+    color: rgb(143, 143, 143);
     font-size: 8em;
     text-transform: capitalize;
     font-weight: 8em;
     background-color: transparent;
-    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
     margin-bottom: .5em;
 }
 
 .hero-heading--small {
     font-size: 2em;
-    text-shadow: 1px 1px 0px transparent, 2px 2px 0px chartreuse;
+    color: rgb(143, 143, 143);
+    text-shadow: 1px 1px 0px transparent, 2px 2px 0px rgb(10, 86, 185);
     animation-delay: 1s;
 }
 .hero-typed {
-    color: chartreuse;
+    color: rgb(10, 86, 185);
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
 }
@@ -106,14 +107,14 @@
         text-decoration: none;
         color:white;
         &:hover {
-            color: chartreuse;
+            color: rgb(10, 86, 185);
         }
     }
 }
 .hero-rrss__line {
     width: 5em;
     height: 1px;
-    background-color: chartreuse;
+    background-color: rgb(10, 86, 185);
     margin: 0 1em;
     flex: 1 1 auto;
 }
@@ -133,7 +134,7 @@
     cursor: pointer;
     transform: rotate(-90deg);
     &:hover {
-        color: chartreuse;
+        color: rgb(10, 86, 185);
     }
 }
 

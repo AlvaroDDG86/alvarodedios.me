@@ -261,7 +261,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
     }
     &__select {
         width: 100%;
@@ -297,7 +297,7 @@
         justify-content: center;
         align-items: center;
         &:hover, &.active {
-            background: chartreuse;
+            background: rgb(10, 86, 185);
             color: black;
         }
         &:hover::after {

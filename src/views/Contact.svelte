@@ -66,7 +66,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
     }
 
     &__picture {
@@ -98,7 +98,7 @@
         width: 2em;
         height: 2em;
         margin: 0 2em;
-        color: chartreuse;
+        color: rgb(10, 86, 185);
     }
 
     &__form {
@@ -113,7 +113,7 @@
         border-radius: 1em;
         margin: 1em;
         & label {
-            color: chartreuse;
+            color: white;
             font-size: 0.6em;
             font-weight: bold;
             text-transform: uppercase;
@@ -131,7 +131,7 @@
             &:focus {
                 outline: none !important;
                 background-color: white;
-                box-shadow: 0px 0px 8px chartreuse;
+                box-shadow: 0px 0px 8px rgb(10, 86, 185);
             }
         }
     }
@@ -151,7 +151,7 @@
         cursor: pointer;
         font-size: 1.2em;
         font-weight: bold;
-        background-color: chartreuse;
+        background-color: white;
         color: #333;
         border: none;
         transition: 0.6s;
@@ -161,10 +161,10 @@
         justify-content: space-evenly;
         align-items: center;
         &:hover {
-            color: chartreuse;
-            background-color: #333;
+            color: rgb(10, 86, 185);
+            background-color: rgb(187, 187, 187);
             border-radius: 15px;
-            box-shadow: 0px 0px 8px chartreuse;
+            box-shadow: 0px 0px 8px rgb(10, 86, 185);
         }
 
         & div {

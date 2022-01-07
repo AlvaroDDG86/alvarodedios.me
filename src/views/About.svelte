@@ -115,7 +115,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
-    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
 }
 .about__desc {
     max-width: 100vw;

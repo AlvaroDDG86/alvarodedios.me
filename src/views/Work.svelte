@@ -154,7 +154,7 @@
     margin: 0;
     font-size: 3em;
     text-align: center;
-    text-shadow: 2px 2px 0px transparent, 4px 4px 0px chartreuse;
+    text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
 }
 
 .work__present {
@@ -275,12 +275,12 @@
 .work__experience-company {
     font-size: 1.3em;
     font-weight: bold;
-    color:chartreuse;
+    color:rgb(10, 86, 185);
 }
 
 .active > .work__experience-title {
     font-size: 3em;
-    text-shadow: 2px 2px 0px transparent, 3px 3px 0px chartreuse;
+    text-shadow: 2px 2px 0px transparent, 3px 3px 0px rgb(10, 86, 185);
 }
 
 .work__experience-dates {
