@@ -2,6 +2,7 @@
     import { scale } from 'svelte/transition';
     import { getImage } from 'src/services/images-service';
     import { IProject } from 'src/models/IProject';
+    import { getIcon } from 'src/services/icons-services';
     export let project: IProject
     function openLink(url) {
         window.open(url, '_blank');
@@ -16,7 +17,7 @@
         <div class="project__buttons">
             {#each project.links as { icon, url }}
                 <div class="project__button" on:click="{() => openLink(url)}">
-                    <svelte:component this={icon} />
+                    <svelte:component this={getIcon(icon)} />
                 </div>
             {/each}
         </div>

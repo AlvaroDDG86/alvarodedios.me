@@ -41,11 +41,11 @@
             >
             <div class="contact__form-control">
                 <label for="email">Email:</label>
-                <input type="email" name="_replyto" id="email" placeholder="Email" required>
+                <input type="email" name="_replyto" id="email" required>
             </div>
             <div class="contact__form-control">
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="4" placeholder="Type here..." required/>
+                <textarea name="message" id="message" rows="4" required/>
             </div>
             <button class="contact__form-button" type="submit"><div><FaEnvelope /></div>Send</button>
         </form>
@@ -62,6 +62,8 @@
     min-height: 100vh;
     padding-bottom: 1em;
     box-sizing: border-box;
+    z-index: 1;
+    position: relative;
     &__header {
         margin: 0;
         font-size: 3em;

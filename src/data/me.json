@@ -1,0 +1,343 @@
+{
+  "descriptions": [
+    "Hey everyone, My name is Álvaro, and I'm from Spain. In the last five years, I've been working as a software developer. In my opinion, technology is here to help us, and I am trying to make software that is easy to use, reusable, fast, and easy to understand.",
+    "As a programmer, I have had the opportunity to work with the latest technologies such as .net, angular 6+, vue 2 and 3 and more.",
+    "From the very beginning, I've always tried to improve my skills through courses, practices, and enjoying the journey.",
+    "I am always willing to communicate, assist, ask, learning and be part of a team."
+  ],
+  "skills": [
+    {
+      "title": "BASIC",
+      "list": [
+        {
+          "icon": "FaJsSquare",
+          "color": "yellow",
+          "text": "JS, ES6, TS"
+        },
+        {
+          "icon": "FaCss3Alt",
+          "color": "#2EA3D5",
+          "text": "CSS3, Flex, Grid, Responsible"
+        },
+        {
+          "icon": "FaHtml5",
+          "color": "#E84D31",
+          "text": "HTML5"
+        }
+      ]
+    },
+    {
+      "title": "FRAMEWORKS",
+      "list": [
+        {
+          "icon": "FaVuejs",
+          "color": "#3FB27F",
+          "text": "VueJS [2, 3], Vuex, Pinia, VeeValidate, Jest"
+        },
+        {
+          "icon": "FaAngular",
+          "color": "#C3002F",
+          "text": "Angular [6+], Typescript, Rxjs, Material, Jasmine"
+        },
+        {
+          "icon": "FaReact",
+          "color": "#5ED4F4",
+          "text": "React"
+        }
+      ]
+    },
+    {
+      "title": "TOOLS",
+      "list": [
+        {
+          "icon": "FaGitAlt",
+          "color": "#E84D31",
+          "text": "Git, GitFlow, GitHub, Sourcedest, Bitbucket"
+        },
+        {
+          "icon": "FaSass",
+          "color": "#C76494",
+          "text": "Sass, TailwindCSS, Bootstrap, Prime"
+        },
+        {
+          "icon": "FaJira",
+          "color": "#0076ED",
+          "text": "Jira, Vite, Agile, Kanbam, Scrum, EsLint, Sonar, Swagger"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "title": "FrontEnd Engineer",
+      "startDate": "May 2021",
+      "endDate": "Present",
+      "company": "AtSistemas (Remote)",
+      "desc": "People and projects management, under Agile, Kanban, Gitflow methodologies, relying on tools such as Jira and Trello for task management, participation in the application architecture, component creation and status management. Unit test using Jest",
+      "techs": [
+        "Javascript",
+        "ES6+",
+        "HTML5",
+        "CSS3",
+        "VueJs",
+        "Jest",
+        "Git",
+        "TailwindCSS",
+        "Jira",
+        "Agile",
+        "..."
+      ],
+      "logo": "assets/images/companies/atsistemas.PNG",
+      "active": false
+    },
+    {
+      "title": "FrontEnd Engineer",
+      "startDate": "October 2019",
+      "endDate": "May 2021",
+      "company": "Minsait (Salamanca/ Remote)",
+      "desc": "Minsait IOT product (Vue, Vuex, ES6, SASS): FrontEnd Responsible. Vehicle tracking, property management, integration with GIS, development of components that meet the application requirements, introduction of coordinates, multiple selection through drop-down lists, in addition to incident resolution and optimization.<br /> Minsait Energy Management Product (Vue, Vuex, ES6, SASS): FrontEnd Responsible. Application which consists of different tables and components, for the purchase / sale of energy, resolution of incidents, creation of new views.<br /> Banco Santander Chile Proxy (Angular 8+, Typescript, SASS, Jasmine): User and profile management, attached documentation, developing the components from scratch.<br /> Votaciones México (Vue, Vuex, ES6, Jest): FrontEnd team leader, deployment application for voting system in LATAM, in which I was the leader of a 3 members frontend team.<br /> Naturgy Project (Angular 6, Typescript): Deployment components to be used as webComponents in an energy sales portal.<br />",
+      "techs": ["Angular 6+", "VueJs", "Bitbucket", "Swagger"],
+      "logo": "assets/images/companies/minsait.PNG",
+      "active": false
+    },
+    {
+      "title": "FullStack Developer",
+      "startDate": "November 2017",
+      "endDate": "October 2019",
+      "company": "Slclab S.L. (Salamanca)",
+      "desc": "Development of SPA applications for internal laboratory management using AngularJS, Angular and Ionic based on Angular, definition of screens and UX / UI views, composed of components using HTML5, CCS3 and typescript, ES6. <br /> Communication with the backend through HTTP calls (GET, POST, FETCH, DELETE), JSON data type, user access control with JWT tokens. <br /> Use of different libraries such as Angular Material, Bootstrap for layout and form components, dropdowns, modals. AgGrid to list content, edit, etc. Angular-charts to display data charts. .Net Webapi for CRUD-L actions in the database, the language used by VB.net. <br />",
+      "techs": [
+        "Angular 6+",
+        "AngularJS",
+        "Typescript",
+        "Ionic 2",
+        "Asp.Net WebApi",
+        "SqlServer",
+        "VSCode"
+      ],
+      "logo": "assets/images/companies/slclab.PNG",
+      "active": false
+    },
+    {
+      "title": "FullStack Developer",
+      "startDate": "October 2016",
+      "endDate": "November 2017",
+      "company": "Tragsatec (Madrid)",
+      "desc": "Development of computer applications for public administrations.",
+      "techs": [
+        ".NET",
+        "APS.NET MVC",
+        "VB.net",
+        "HTML5",
+        "CSS3",
+        "JS",
+        "JQuery",
+        "Asp.Net WebApi",
+        "SqlServer",
+        "Entity Framework"
+      ],
+      "logo": "assets/images/companies/tragsatec.PNG",
+      "active": false
+    },
+    {
+      "title": "FullStack Developer",
+      "startDate": "March 2016",
+      "endDate": "June 2016",
+      "company": "Global Exchange (Salamanca)",
+      "desc": "Web applications development.",
+      "techs": [
+        ".NET",
+        "APS.NET MVC",
+        "C#",
+        "HTML5",
+        "CSS3",
+        "JS",
+        "AngularJS"
+      ],
+      "logo": "assets/images/companies/global.PNG",
+      "active": false
+    }
+  ],
+  "apps": [
+    {
+      "title": "Your words!",
+      "desc": "Place where you can save your words, anotations, examples, etc... ",
+      "cat": "Vue",
+      "image": "words",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/your-words"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://your-words.netlify.app/"
+        }
+      ]
+    },
+    {
+      "title": "Light rate",
+      "desc": "Query the price of the ligth in Spain",
+      "cat": "Vue",
+      "image": "rate",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/light-rate"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://precioluzespana.netlify.app/#/"
+        }
+      ]
+    },
+    {
+      "title": "Player",
+      "desc": "Player music with this web app",
+      "cat": "Vue",
+      "image": "player",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/Player"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://alvaroddg86.github.io/Player/"
+        }
+      ]
+    },
+    {
+      "title": "Calc",
+      "desc": "Simple react app calc",
+      "cat": "React",
+      "image": "calc",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/react-calc"
+        }
+      ]
+    },
+    {
+      "title": "Football",
+      "desc": "Matchs, standings and results",
+      "cat": "Angular",
+      "image": "football",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/football-angular"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://football-angular.netlify.app/"
+        }
+      ]
+    },
+    {
+      "title": "Heroes",
+      "desc": "Angular material, json-server CRUD-L app",
+      "cat": "Angular",
+      "image": "hero",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/crudl-angular"
+        }
+      ]
+    },
+    {
+      "title": "Voices",
+      "desc": "List of favs, selected and filtered items",
+      "cat": "Vue",
+      "image": "voices",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/challengue-voices"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://quirky-turing-2080f9.netlify.app/"
+        }
+      ]
+    },
+    {
+      "title": "Voices 2.0",
+      "desc": "This time with Vue 3, Vite and pinia",
+      "cat": "Vue",
+      "image": "voices",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/challengue-voice-v2"
+        }
+      ]
+    },
+    {
+      "title": "alvarodedios.me",
+      "desc": "Profile page created with svelte",
+      "cat": "Others...",
+      "image": "alvaro",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/alvarodedios.me"
+        }
+      ]
+    },
+    {
+      "title": "Pinia",
+      "desc": "Litle concept try of pinia",
+      "cat": "Vue",
+      "image": "pinia",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/pinia-try"
+        }
+      ]
+    },
+    {
+      "title": "Color tdd",
+      "desc": "Litle concept try of tdd",
+      "cat": "Vue",
+      "image": "color",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/color-tdd"
+        }
+      ]
+    },
+    {
+      "title": "Algs",
+      "desc": "Some hackerrank tested algorithms",
+      "cat": "Others...",
+      "image": "alg",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/algorithms"
+        }
+      ]
+    },
+    {
+      "title": "50 projects",
+      "desc": "App in vanilla flavour",
+      "cat": "Others...",
+      "image": "fifty",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/fifty-projects"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://alvaroddg86.github.io/fifty-projects/"
+        }
+      ]
+    }
+  ]
+}

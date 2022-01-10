@@ -1,11 +1,11 @@
 <script lang="ts">
+    import FaAlignJustify from 'svelte-icons/fa/FaAlignJustify.svelte'
+    import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
     import SocialList from 'src/components/SocialList.svelte'
     interface MenuLink {
         to: string;
         link: string;
     }
-    import FaAlignJustify from 'svelte-icons/fa/FaAlignJustify.svelte'
-    import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
     import { link, navigate } from 'svelte-routing';
     const menu: Array<MenuLink> = [
         { to: '/', link: 'Home' },
@@ -137,7 +137,7 @@
     & > .aside__burguer {
         cursor: pointer;
         padding: 0 3px;
-        color: rgb(10, 86, 185);
+        color: rgb(148, 191, 248);
         opacity: 1;
         transition: 0.6s;
     }

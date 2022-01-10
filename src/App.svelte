@@ -8,10 +8,16 @@
 	import Projects from './views/Projects.svelte'
 	import video from '../public/assets/videos/video.mp4'
 	import bg from '../public/assets/images/bg.jpg'
+	import Particles from "svelte-particles";
+	import conf from 'src/data/particles.js'
 	let name: string = 'world';
 	export let url = "";
 </script>
 <div class="container" style="background-image: url({bg})">
+	<Particles
+		id="tsparticles"
+		options="{conf}"
+		/>
 	<!-- <video id="background-video" autoplay loop muted poster={video}>
 		<source src={video} type="video/mp4">
 	</video> -->

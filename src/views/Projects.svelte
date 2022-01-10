@@ -1,221 +1,29 @@
-<script lang="ts">
+<script>
     import { scale } from 'svelte/transition';
-    import FaVuejs from 'svelte-icons/fa/FaVuejs.svelte'
-    import FaAngular from 'svelte-icons/fa/FaAngular.svelte'
-    import FaReact from 'svelte-icons/fa/FaReact.svelte'
-    import FaFlask from 'svelte-icons/fa/FaFlask.svelte'
-    import FaExternalLinkAlt from 'svelte-icons/fa/FaExternalLinkAlt.svelte'
-    import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
+    import { getIcon } from 'src/services/icons-services';
     import Project from './components/Project.svelte'
-    import { IButton } from 'src/models/IButton';
-    import { IProject } from 'src/models/IProject';
-    const buttons: IButton[] = [
+    const buttons = [
         {
             text: 'Vue',
-            icon: FaVuejs
+            icon: getIcon('FaVuejs')
         },
         {
             text: 'Angular',
-            icon: FaAngular
+            icon: getIcon('FaAngular')
         },
         {
             text: 'React',
-            icon: FaReact
+            icon: getIcon('FaReact')
         },
         {
             text: 'Others...',
-            icon: FaFlask
+            icon: getIcon('FaFlask')
         }
     ]
-    const projects: IProject[] = [
-        {
-            title: 'Your words!',
-            desc: 'Place where you can save your words, anotations, examples, etc... ',
-            cat: 'Vue',
-            image: 'words',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/your-words'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://your-words.netlify.app/'
-                }
-            ]
-        },
-        {
-            title: 'Light rate',
-            desc: 'Query the price of the ligth in Spain',
-            cat: 'Vue',
-            image: 'rate',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/light-rate'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://precioluzespana.netlify.app/#/'
-                }
-            ]
-        },
-        {
-            title: 'Player',
-            desc: 'Player music with this web app',
-            cat: 'Vue',
-            image: 'player',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/Player'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://alvaroddg86.github.io/Player/'
-                }
-            ]
-        },
-        {
-            title: 'Calc',
-            desc: 'Simple react app calc',
-            cat: 'React',
-            image: 'calc',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/react-calc'
-                }
-            ]
-        },
-        {
-            title: 'Football',
-            desc: 'Matchs, standings and results',
-            cat: 'Angular',
-            image: 'football',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/football-angular'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://football-angular.netlify.app/'
-                }
-            ]
-        },
-        {
-            title: 'Heroes',
-            desc: 'Angular material, json-server CRUD-L app',
-            cat: 'Angular',
-            image: 'hero',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/crudl-angular'
-                }
-            ]
-        },
-        {
-            title: 'Voices',
-            desc: 'List of favs, selected and filtered items',
-            cat: 'Vue',
-            image: 'voices',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/challengue-voices'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://quirky-turing-2080f9.netlify.app/'
-                }
-            ]
-        },
-        {
-            title: 'Voices 2.0',
-            desc: 'This time with Vue 3, Vite and pinia',
-            cat: 'Vue',
-            image: 'voices',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/challengue-voice-v2'
-                }
-            ]
-        },
-        {
-            title: 'alvarodedios.me',
-            desc: 'Profile page created with svelte',
-            cat: 'Others...',
-            image: 'alvaro',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/alvarodedios.me'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https:alvarodedios.me'
-                }
-            ]
-        },
-        {
-            title: 'Pinia',
-            desc: 'Litle concept try of pinia',
-            cat: 'Vue',
-            image: 'pinia',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/pinia-try'
-                }
-            ]
-        },
-        {
-            title: 'Color tdd',
-            desc: 'Litle concept try of tdd',
-            cat: 'Vue',
-            image: 'color',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/color-tdd'
-                }
-            ]
-        },
-        {
-            title: 'Algs',
-            desc: 'Some hackerrank tested algorithms',
-            cat: 'Others...',
-            image: 'alg',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/algorithms'
-                }
-            ]
-        },
-        {
-            title: '50 projects',
-            desc: 'App in vanilla flavour',
-            cat: 'Others...',
-            image: 'fifty',
-            links: [
-                {
-                    icon: FaGithub,
-                    url: 'https://github.com/AlvaroDDG86/fifty-projects'
-                },
-                {
-                    icon: FaExternalLinkAlt,
-                    url: 'https://alvaroddg86.github.io/fifty-projects/'
-                }
-            ]
-        }
-    ]
-    $: filteredProjects = projects.filter(proj => !active || active.text === proj.cat);
+    import { apps } from 'src/data/me.json'
+    $: filteredProjects = apps.length ? apps.filter(proj => !active || active.text === proj.cat) : [];
     let active = null
-    function setType(button: IButton): void {
+    function setType(button) {
         active = !active ? button : active.text === button.text ? null : button
     }
 </script>
