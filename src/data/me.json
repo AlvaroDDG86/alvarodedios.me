@@ -248,6 +248,22 @@
       ]
     },
     {
+      "title": "RickMorty",
+      "desc": "Composition Api, composables, testing library, Cy",
+      "cat": "Vue",
+      "image": "rick",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/rick-morty"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://rickandmortyvue3js.netlify.app/"
+        }
+      ]
+    },
+    {
       "title": "Voices",
       "desc": "List of favs, selected and filtered items",
       "cat": "Vue",
