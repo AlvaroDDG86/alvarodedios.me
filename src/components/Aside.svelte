@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-left: 2px solid rgb(10, 86, 185);
+    border-left: 2px solid #31771b;
     z-index: 10;
 
     .aside__close {
@@ -132,7 +132,7 @@
         color: white;
         font-size: 2em;
         cursor: pointer;
-        text-shadow: 1px 1px 0px transparent, 2px 2px 0px rgb(10, 86, 185);
+        text-shadow: 1px 1px 0px transparent, 2px 2px 0px #31771b;
     }
     & > .aside__burguer {
         cursor: pointer;

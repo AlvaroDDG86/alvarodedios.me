@@ -13,7 +13,8 @@
 	let name: string = 'world';
 	export let url = "";
 </script>
-<div class="container" style="background-image: url({bg})">
+<!-- <div class="container" style="background-image: url({bg})"> -->
+<div class="container">
 	<Particles
 		id="tsparticles"
 		options="{conf}"
@@ -52,6 +53,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: white;
 }
 // * {
 //     outline: 1px solid #f00 !important;

@@ -60,7 +60,7 @@
         text-align: center;
         background-color: white;
         overflow: hidden;
-        color: rgb(10, 86, 185);
+        color: #31771b;
         top: -.4em;
         left: -.3em;
         transform: rotate(-7deg);

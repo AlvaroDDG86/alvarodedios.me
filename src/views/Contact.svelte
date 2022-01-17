@@ -62,13 +62,13 @@
     min-height: 100vh;
     padding-bottom: 1em;
     box-sizing: border-box;
-    z-index: 1;
-    position: relative;
+    // z-index: 1;
+    // position: relative;
     &__header {
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px #31771b;
     }
 
     &__picture {
@@ -85,6 +85,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        position: relative;
     }
     &__list {
         width: 100%;
@@ -100,7 +101,7 @@
         width: 2em;
         height: 2em;
         margin: 0 2em;
-        color: rgb(10, 86, 185);
+        color: #31771b;
     }
 
     &__form {
@@ -133,7 +134,7 @@
             &:focus {
                 outline: none !important;
                 background-color: white;
-                box-shadow: 0px 0px 8px rgb(10, 86, 185);
+                box-shadow: 0px 0px 8px #31771b;
             }
         }
     }
@@ -163,10 +164,10 @@
         justify-content: space-evenly;
         align-items: center;
         &:hover {
-            color: rgb(10, 86, 185);
+            color: #31771b;
             background-color: rgb(187, 187, 187);
             border-radius: 15px;
-            box-shadow: 0px 0px 8px rgb(10, 86, 185);
+            box-shadow: 0px 0px 8px #31771b;
         }
 
         & div {

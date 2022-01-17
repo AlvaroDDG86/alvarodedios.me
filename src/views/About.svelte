@@ -5,7 +5,7 @@
     import { descriptions, skills } from 'src/data/me.json'
 </script>
 <section class="about">
-    <h1 class="about__header animate animate__down">About me</h1>
+    <h1 class="about__header animate animate__down">About</h1>
     <div class="about__desc">
         {#each descriptions as desc}
             <p class="about__p">{desc}</p>
@@ -43,7 +43,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px #31771b;
     }
     &__desc {
         max-width: 100vw;

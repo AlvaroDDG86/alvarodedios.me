@@ -66,7 +66,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px #31771b;
     }
     
     &__present {
@@ -187,12 +187,12 @@
     &__experience-company {
         font-size: 1.3em;
         font-weight: bold;
-        color:rgb(10, 86, 185);
+        color:#31771b;
     }
     
     .active > &__experience-title {
         font-size: 3em;
-        text-shadow: 2px 2px 0px transparent, 3px 3px 0px rgb(10, 86, 185);
+        text-shadow: 2px 2px 0px transparent, 3px 3px 0px #31771b;
     }
     
     &__experience-dates {

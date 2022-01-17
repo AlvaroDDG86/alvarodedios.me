@@ -13,7 +13,7 @@
     <div class="home__text">
         <div class="home__title">
             <h1 class="home__heading animate animate__down">
-                I'm Alvaro de Dios
+                <span>Welcome,</span><br/> I'm Alvaro de Dios
             </h1>
             <h2 class="home__heading home__heading--small animate animate__rotateY">Front End Developer</h2>
         </div>
@@ -61,34 +61,37 @@
         padding-left: 1em;
     }
     &__heading {
-        color: rgb(143, 143, 143);
-        font-size: 8em;
+        color: rgb(26, 26, 26);
+        font-size: 4em;
         text-transform: capitalize;
         font-weight: 8em;
         background-color: transparent;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
         margin-bottom: .5em;
-        @media only screen and (max-width: 992px) { 
-            font-size: 6em;
+
+        & span {
+            font-size: 0.50em;
         }
-        @media only screen and (max-width: 600px) { 
-            font-size: 4em;
-        }
+        // @media only screen and (max-width: 992px) { 
+        //     font-size: 6em;
+        // }
+        // @media only screen and (max-width: 600px) { 
+        //     font-size: 4em;
+        // }
         &--small {
             @media only screen and (max-width: 600px) { 
                 font-size: 2em;
             }
             font-size: 2em;
-            color: rgb(143, 143, 143);
-            text-shadow: 1px 1px 0px transparent, 2px 2px 0px rgb(10, 86, 185);
+            color: rgb(26, 26, 26);
             animation-delay: 1s;
         }
     }
     &__title {
         font-family: 'Poppins', sans-serif;
     }
+
     &__typed {
-        color: rgb(10, 86, 185);
+        color: #31771b;
         font-size: 1.5em;
         font-family: 'Poppins', sans-serif;
         @media only screen and (max-width: 600px) { 
@@ -117,7 +120,7 @@
             align-items: center;
             & > a {    
                 text-decoration: none;
-                color: rgb(10, 86, 185);
+                color: #31771b;
                 &:hover {
                     color:rgb(143, 143, 143);
                 }
@@ -133,7 +136,7 @@
             height: 2em;
             cursor: pointer;
             transform: rotate(-90deg);
-            color: rgb(10, 86, 185);
+            color: #31771b;
             &:hover {
                 color: rgb(143, 143, 143);
             }
@@ -141,7 +144,7 @@
         &-line {
             width: 5em;
             height: 1px;
-            background-color: rgb(10, 86, 185);
+            background-color: #31771b;
             margin: 0 1em;
             flex: 1 1 auto;
         }

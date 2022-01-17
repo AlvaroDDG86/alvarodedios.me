@@ -69,7 +69,7 @@
         margin: 0;
         font-size: 3em;
         text-align: center;
-        text-shadow: 2px 2px 0px transparent, 4px 4px 0px rgb(10, 86, 185);
+        text-shadow: 2px 2px 0px transparent, 4px 4px 0px #31771b;
     }
     &__select {
         width: 100%;
@@ -105,7 +105,7 @@
         justify-content: center;
         align-items: center;
         &:hover, &.active {
-            background: rgb(10, 86, 185);
+            background: #31771b;
             color: black;
         }
         &:hover::after {
