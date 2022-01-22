@@ -13,9 +13,9 @@
     <div class="home__text">
         <div class="home__title">
             <h1 class="home__heading animate animate__down">
-                <span>Welcome,</span><br/> I'm Alvaro de Dios
+                <span>&lt;welcome /&gt;</span><br/> I'm Alvaro de Dios
             </h1>
-            <h2 class="home__heading home__heading--small animate animate__rotateY">Front End Developer</h2>
+            <h2 class="home__heading home__heading--small animate animate__rotateY">&lt;front-end-developer /&gt;</h2>
         </div>
         <p class="home__typed">
             <Typewriter interval={50} cursor={'_'} loop={true}>
@@ -63,20 +63,30 @@
     &__heading {
         color: rgb(26, 26, 26);
         font-size: 4em;
-        text-transform: capitalize;
         font-weight: 8em;
         background-color: transparent;
         margin-bottom: .5em;
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #41B883 29%,
+            #AF2B2D 67%,
+            #5ED3F3 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
 
         & span {
             font-size: 0.50em;
         }
-        // @media only screen and (max-width: 992px) { 
-        //     font-size: 6em;
-        // }
-        // @media only screen and (max-width: 600px) { 
-        //     font-size: 4em;
-        // }
         &--small {
             @media only screen and (max-width: 600px) { 
                 font-size: 2em;
@@ -91,7 +101,7 @@
     }
 
     &__typed {
-        color: #31771b;
+        color: #000000;
         font-size: 1.5em;
         font-family: 'Poppins', sans-serif;
         @media only screen and (max-width: 600px) { 
@@ -149,5 +159,11 @@
             flex: 1 1 auto;
         }
     }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 </style>
