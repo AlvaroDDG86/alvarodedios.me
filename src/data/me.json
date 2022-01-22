@@ -280,6 +280,18 @@
       ]
     },
     {
+      "title": "Users list",
+      "desc": "Like a todo list, validations and modal",
+      "cat": "React",
+      "image": "users",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/users-react"
+        }
+      ]
+    },
+    {
       "title": "Voices 2.0",
       "desc": "This time with Vue 3, Vite and pinia",
       "cat": "Vue",
