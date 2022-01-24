@@ -211,7 +211,7 @@
       "title": "IP Tracker",
       "desc": "Search an IP and get info",
       "cat": "React",
-      "image": "ip",
+      "image": "ipTrack",
       "links": [
         {
           "icon": "FaGithub",
