@@ -208,6 +208,22 @@
       ]
     },
     {
+      "title": "IP Tracker",
+      "desc": "Search an IP and get info",
+      "cat": "React",
+      "image": "ip",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/ip-tracker"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://react-iptracker.netlify.app/"
+        }
+      ]
+    },
+    {
       "title": "Calc",
       "desc": "Simple react app calc",
       "cat": "React",
