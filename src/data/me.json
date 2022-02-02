@@ -332,6 +332,22 @@
       ]
     },
     {
+      "title": "Order food",
+      "desc": "App concept with context, reduce and more",
+      "cat": "React",
+      "image": "food",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/food-app"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://react-orderfood.netlify.app/"
+        }
+      ]
+    },
+    {
       "title": "Pinia",
       "desc": "Litle concept try of pinia",
       "cat": "Vue",
