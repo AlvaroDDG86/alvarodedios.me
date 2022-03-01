@@ -15,6 +15,7 @@ import users from '../../public/assets/images/projects/users.png'
 import food from '../../public/assets/images/projects/food.png'
 import trello from '../../public/assets/images/projects/trello.png'
 import quiz from '../../public/assets/images/projects/quiz.png'
+import pokemon from '../../public/assets/images/projects/pokemon.png'
 import ipTrack from '../../public/assets/images/projects/ip-track.png'
 import notFound from '../../public/assets/images/projects/not-found.png'
 export function getImage(imageName) {
@@ -36,6 +37,7 @@ export function getImage(imageName) {
         food,
         ipTrack,
         trello,
+        pokemon,
         quiz,
         notFound
     }

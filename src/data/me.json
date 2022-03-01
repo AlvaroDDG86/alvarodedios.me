@@ -264,6 +264,22 @@
       ]
     },
     {
+      "title": "Pokemon React",
+      "desc": "React, Material UI",
+      "cat": "React",
+      "image": "pokemon",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/pokemon-react"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://pokereactapp.netlify.app/"
+        }
+      ]
+    },
+    {
       "title": "RickMorty",
       "desc": "Composition Api, composables, testing library, Cy",
       "cat": "Vue",
