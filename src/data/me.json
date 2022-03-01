@@ -280,6 +280,22 @@
       ]
     },
     {
+      "title": "Kanban Vue Board",
+      "desc": "Kanban made with Vue 3, pinia, Tailwind",
+      "cat": "Vue",
+      "image": "trello",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/trello-vue"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://vue-trello-tailwind.netlify.app/#/"
+        }
+      ]
+    },
+    {
       "title": "Voices",
       "desc": "List of favs, selected and filtered items",
       "cat": "Vue",
@@ -304,6 +320,22 @@
         {
           "icon": "FaGithub",
           "url": "https://github.com/AlvaroDDG86/users-react"
+        }
+      ]
+    },
+    {
+      "title": "Quiz Vue Game",
+      "desc": "Quiz game made with Vue 3, pinia, Typescript, Jest and Cypress",
+      "cat": "Vue",
+      "image": "quiz",
+      "links": [
+        {
+          "icon": "FaGithub",
+          "url": "https://github.com/AlvaroDDG86/vue-quiz"
+        },
+        {
+          "icon": "FaExternalLinkAlt",
+          "url": "https://vue-quiz-tailwind.netlify.app/#/"
         }
       ]
     },

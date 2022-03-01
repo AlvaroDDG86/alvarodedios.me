@@ -13,6 +13,8 @@ import fifty from '../../public/assets/images/projects/fifty.png'
 import rick from '../../public/assets/images/projects/rick.png'
 import users from '../../public/assets/images/projects/users.png'
 import food from '../../public/assets/images/projects/food.png'
+import trello from '../../public/assets/images/projects/trello.png'
+import quiz from '../../public/assets/images/projects/quiz.png'
 import ipTrack from '../../public/assets/images/projects/ip-track.png'
 import notFound from '../../public/assets/images/projects/not-found.png'
 export function getImage(imageName) {
@@ -33,6 +35,8 @@ export function getImage(imageName) {
         users,
         food,
         ipTrack,
+        trello,
+        quiz,
         notFound
     }
     return images[imageName] ? images[imageName] : images.notFound
